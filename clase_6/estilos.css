@@ -1,0 +1,46 @@
+/* Estilos generales */
+header {
+    background-color: #999;
+    height: 600px;
+}
+
+div {
+    /* width: 100px; */
+    /* height: 100px; */
+    background-color: pink;
+    margin: 5px;
+}
+
+section {
+    height: 1200px;
+}
+
+
+/* GRIDS */
+/* FORMA EXPLICITA */
+.gridExplicito {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 2fr 2fr 1fr;
+}
+.gridRepetitivo {
+    display: grid;
+    grid-template-columns: 30% 2fr repeat(9, 1fr) 2fr;
+    grid-template-rows: repeat (12, 1fr );
+}
+
+/* GRID por AREAS */
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+      "nav header header"
+      "nav productos publicidad"
+      "nav servicios publicidad"
+      "nav footer footer";
+    grid-template-rows: 100px 1fr 1fr 75px; 
+    grid-template-columns: 20% auto 15%;
+ }
+
+ 
+ 
